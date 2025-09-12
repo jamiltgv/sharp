@@ -42,10 +42,11 @@ namespace Project
             Console.WriteLine($"\nPoints: {gainedPoints}");
         }
 
-        public static void GameOver()
+        public static void GameOver(int gainedPoints)
         {
             Console.Clear();
-            Console.WriteLine("\n\n                              Game Over!\n\n");
+            Console.WriteLine("\n\n                              Game Over!\n");
+            Console.WriteLine($"                              Result: {gainedPoints}\n");
         }
 
         static void Main(string[] args)
@@ -110,7 +111,7 @@ namespace Project
                 }
             }
 
-            GameOver();
+            GameOver(gainedPoints);
         }
     }
 }
